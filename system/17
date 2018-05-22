@@ -1,0 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    17                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: aziabkin <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/05/22 11:09:06 by aziabkin          #+#    #+#              #
+#    Updated: 2018/05/22 11:09:13 by aziabkin         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#https://www.digitalocean.com/community/tutorials/how-to-list-and-delete-iptables-firewall-rules
+
+sudo iptables -S

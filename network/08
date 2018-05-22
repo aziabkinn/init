@@ -1,0 +1,20 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    08                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: aziabkin <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/05/18 20:10:28 by aziabkin          #+#    #+#              #
+#    Updated: 2018/05/19 15:44:43 by aziabkin         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#Amazon AWS Network Operations
+#
+#Hosting is a place on the server 
+#that a certain company provides to you. 
+#The company that provides hosting is called a hosting provider.
+#We can find it in the field: "OrgNOCName"
+
+whois 52.84.197.107 | grep "OrgNOCName: " | sed 's/OrgNOCName:   //'

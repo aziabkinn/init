@@ -1,0 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    13                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: aziabkin <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/05/19 16:33:25 by aziabkin          #+#    #+#              #
+#    Updated: 2018/05/19 18:18:48 by aziabkin         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#nslookup 10.51.1.253
+
+#name = ns1.unit.ua.
+#the server type is ns1
+
+#ns1 - NS servers are required in order to match the domain name to the IP address and on the contrary.

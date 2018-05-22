@@ -1,0 +1,25 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    04                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: aziabkin <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/05/22 11:11:24 by aziabkin          #+#    #+#              #
+#    Updated: 2018/05/22 11:11:28 by aziabkin         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#http://rus-linux.net/MyLDP/consol/mails.html
+
+MD5SUM='cat /root/crontabsum'
+NEW='md5sum /etc/crontab | cut -d " " -f 1'
+
+if [ "$MD5SUM" != "$NEW" ]
+then
+	md5sum /etc/crontab | cut -d " " -f 1 > /root/crontabsum
+	mail -s "The file was modified" root@localhost.com < /etc/crontab
+fi
+
+# add this line to /etc/crontab
+# 0 0 * * *   root    sh /root/crontab_check.sh
